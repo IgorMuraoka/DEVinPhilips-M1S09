@@ -2,20 +2,17 @@
   <div class="row g-0">
     <div class="col-md-4">
       <img
-        src="./assets/tbbt.jpg"
+        src="{{ personagem.imagem }}"
         class="img-fluid rounded-start"
         alt="Sheldon Cooper"
       />
     </div>
     <div class="col-md-8">
       <div class="card-body">
-        <h5 class="card-title">Sheldon Cooper</h5>
+        <h5 class="card-title">{{ personagem.nome }}</h5>
+        <small class="card-text">{{ personagem.nomeAtor }}</small>
         <hr />
-        <p class="card-text mt-4">
-          Dr. Sheldon Lee Cooper, PhD. é um personagem fictício dos seriados de
-          televisão estadunidense The Big Bang Theory, interpretado por Jim
-          Parsons.
-        </p>
+        <p class="card-text mt-4">{{ personagem.descricao }}</p>
       </div>
     </div>
   </div>
